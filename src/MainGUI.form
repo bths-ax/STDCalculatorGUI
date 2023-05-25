@@ -15,7 +15,7 @@
           </grid>
         </constraints>
         <properties>
-          <font size="14"/>
+          <font size="16"/>
         </properties>
       </component>
       <component id="56459" class="javax.swing.JTextField" binding="dataField">

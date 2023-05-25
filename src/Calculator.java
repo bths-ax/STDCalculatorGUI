@@ -70,6 +70,10 @@ public class Calculator extends AbstractListModel<Double> {
         return calculatePercentWithin(mean + std * left, mean + std * right);
     }
 
+    public String toString() {
+        return data.toString();
+    }
+
     @Override
     public int getSize() { return data.size(); }
     @Override
