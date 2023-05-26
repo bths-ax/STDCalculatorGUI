@@ -20,6 +20,7 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
     private JTextField upperField;
     private JLabel medianLabel;
     private JLabel stdLabel;
+    private JScrollPane dataScroller;
 
     private Calculator calculator;
 
