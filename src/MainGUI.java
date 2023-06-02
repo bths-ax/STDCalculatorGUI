@@ -75,6 +75,8 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
                 value = Double.parseDouble(dataField.getText().trim());
                 calculator.add(value);
             } catch (Exception ex) { }
+            dataField.setText("");
+            dataField.grabFocus();
         } else if (obj == removeButton) {
             int idx = dataList.getSelectedIndex();
             if (idx != -1) {
