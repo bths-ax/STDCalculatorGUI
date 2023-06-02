@@ -28,6 +28,10 @@ public class Calculator extends AbstractListModel<Double> {
         data.remove(index);
     }
 
+    public void clear() {
+        data.clear();
+    }
+
     public double calculateMedian() {
         if (data.size() == 0) return 0;
         if (data.size() % 2 == 0) {
@@ -57,6 +61,7 @@ public class Calculator extends AbstractListModel<Double> {
     }
 
     public double calculatePercentWithin(double left, double right) {
+        if (data.size() == 0) return 0;
         int count = 0;
         for (double num : data)
             if (left - EPSILON < num && num < right + EPSILON)
@@ -68,10 +73,6 @@ public class Calculator extends AbstractListModel<Double> {
         double mean = calculateMean();
         double std = calculateStd();
         return calculatePercentWithin(mean + std * left, mean + std * right);
-    }
-
-    public String toString() {
-        return data.toString();
     }
 
     @Override
