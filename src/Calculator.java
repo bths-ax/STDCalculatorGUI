@@ -75,6 +75,12 @@ public class Calculator extends AbstractListModel<Double> {
         return calculatePercentWithin(mean + std * left, mean + std * right);
     }
 
+
+    public String serialize() {
+        return null; // todo
+    }
+
+
     @Override
     public int getSize() { return data.size(); }
     @Override
