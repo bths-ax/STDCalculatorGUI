@@ -35,7 +35,7 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
     public void createUIComponents() {
         setContentPane(mainPanel);
         setTitle("Standard Deviation Calculator");
-        setSize(750, 300);
+        setSize(600, 500);
         setLocationByPlatform(true);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
