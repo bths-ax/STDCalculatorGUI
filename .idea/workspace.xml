@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ab3a1ed-6c84-464c-8b34-dc36ea9b0ff5" name="Changes" comment="finish implementing import/export functionality">
-      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
+    <list default="true" id="7ab3a1ed-6c84-464c-8b34-dc36ea9b0ff5" name="Changes" comment="made serialization upper case bc that would be funny i think">
+      <change afterPath="$PROJECT_DIR$/src/Datagen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,14 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Datagen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Datagen" />
+      <module name="STDCalculatorGUI" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="STDCalculatorGUI" />
@@ -50,6 +58,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Datagen" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685967601364</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="made serialization upper case bc that would be funny i think">
+      <created>1685967725912</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685967725912</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +133,7 @@
     <MESSAGE value="changed gui size" />
     <MESSAGE value="make adding multiple values easier" />
     <MESSAGE value="finish implementing import/export functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish implementing import/export functionality" />
+    <MESSAGE value="made serialization upper case bc that would be funny i think" />
+    <option name="LAST_COMMIT_MESSAGE" value="made serialization upper case bc that would be funny i think" />
   </component>
 </project>
