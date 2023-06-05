@@ -3,8 +3,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.File;
-import java.io.FileWriter;
-import java.util.ArrayList;
+import java.nio.file.Files;
+import java.nio.file.StandardOpenOption;
 import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
 
@@ -50,7 +50,7 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
                 if (extIdx != -1) {
                     ext = name.substring(extIdx + 1);
                 }
-                return ext == "std";
+                return ext.equals("std");
             }
 
             @Override
@@ -123,6 +123,11 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
             int chooserStatus = chooser.showOpenDialog(this);
             if (chooserStatus == JFileChooser.APPROVE_OPTION) {
                 File chosen = chooser.getSelectedFile();
+                try {
+                    String serialized = Files.readString(chosen.toPath());
+                    calculator.clear();
+                    calculator.deserialize(serialized);
+                } catch (Exception ex) { }
             }
         }
 
@@ -131,11 +136,10 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
             if (chooserStatus == JFileChooser.APPROVE_OPTION) {
                 File chosen = chooser.getSelectedFile();
                 if (!chosen.getName().endsWith(".std")) {
-                    chosen = new File(chosen.getName() + ".std");
+                    chosen = new File(chosen.getPath() + ".std");
                 }
                 try {
-                    FileWriter writer = new FileWriter(chosen);
-                    writer.write(calculator.serialize());
+                    Files.writeString(chosen.toPath(), calculator.serialize(), StandardOpenOption.CREATE);
                 } catch (Exception ex) { }
             }
         }

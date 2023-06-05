@@ -77,7 +77,21 @@ public class Calculator extends AbstractListModel<Double> {
 
 
     public String serialize() {
-        return null; // todo
+        String out = "std:";
+        for (double value : data)
+            out += String.format("%x", Double.doubleToLongBits(value));
+        return out;
+    }
+
+    public void deserialize(String in) {
+        if (!in.startsWith("std:")) {
+            return;
+        }
+        for (int i = 4; i < in.length(); i += 16) {
+            String hex = in.substring(i, i + 16);
+            long dec = Long.decode("0x" + hex);
+            data.add(Double.longBitsToDouble(dec));
+        }
     }
 
 
