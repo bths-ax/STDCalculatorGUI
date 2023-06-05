@@ -79,7 +79,7 @@ public class Calculator extends AbstractListModel<Double> {
     public String serialize() {
         String out = "std:";
         for (double value : data)
-            out += String.format("%x", Double.doubleToLongBits(value));
+            out += String.format("%X", Double.doubleToLongBits(value));
         return out;
     }
 
