@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ab3a1ed-6c84-464c-8b34-dc36ea9b0ff5" name="Changes" comment="made serialization upper case bc that would be funny i think">
+    <list default="true" id="7ab3a1ed-6c84-464c-8b34-dc36ea9b0ff5" name="Changes" comment="no wonder directories werent showing up lol">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Datagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Datagen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,15 +34,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
-}</component>
-  <component name="RunManager" selected="Application.Datagen">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arden\IdeaProjects\STDCalculatorGUI\out" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Datagen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Datagen" />
       <module name="STDCalculatorGUI" />
@@ -58,8 +64,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Datagen" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Datagen" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685967725912</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="no wonder directories werent showing up lol">
+      <created>1686098146808</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686098146808</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +148,7 @@
     <MESSAGE value="make adding multiple values easier" />
     <MESSAGE value="finish implementing import/export functionality" />
     <MESSAGE value="made serialization upper case bc that would be funny i think" />
-    <option name="LAST_COMMIT_MESSAGE" value="made serialization upper case bc that would be funny i think" />
+    <MESSAGE value="no wonder directories werent showing up lol" />
+    <option name="LAST_COMMIT_MESSAGE" value="no wonder directories werent showing up lol" />
   </component>
 </project>

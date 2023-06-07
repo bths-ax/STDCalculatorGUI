@@ -40,10 +40,12 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
 
     public void createUIComponents() {
         this.chooser = new JFileChooser();
-        this.chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        this.chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
         this.chooser.setFileFilter(new FileFilter() {
             @Override
             public boolean accept(File f) {
+                if (f.isDirectory())
+                    return true;
                 String name = f.getName();
                 String ext = "";
                 int extIdx = name.lastIndexOf(".");
